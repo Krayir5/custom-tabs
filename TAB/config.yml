@@ -1,0 +1,131 @@
+header-footer:
+  enabled: true
+  header:
+  - ' '
+  - ' '
+  - ' '
+  - '%img_customtab%'
+  - ' '
+  - '&7www.krayir5.xyz'
+  - ' '
+  footer:
+  - '&7ᴘɪɴɢ: &f%player_ping% &7| ᴛᴘѕ: &f%server_tps_1%'
+  - ' '
+  - '&7 ʀᴀᴍ ᴜsᴀɢᴇ: %memory-used% ᴍʙ / %memory-max% ᴍʙ'
+  - ' '
+  - '         &7ᴍʏ ɢɪᴛʜᴜʙ github.com/Krayir5         '
+  - ' '
+  disable-condition: '%world%=disabledworld'
+  per-world:
+    world1:
+      header:
+      - an example of world with custom
+      footer:
+      - header/footer and prefix/suffix
+    world2;world3:
+      header:
+      - This is a shared header for
+      - world2 and world3
+tablist-name-formatting:
+  enabled: true
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+  - GROUPS:admin,dev,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+  unlimited-nametag-mode:
+    enabled: false
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  fancy-value: '&7Ping: %ping%'
+  disable-condition: '%world%=disabledworld'
+bossbar:
+  enabled: true
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: WHITE
+      progress: '100'
+      text: '&bwww.krayir5.xyz'
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: false
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  respect-other-plugins: true
+  scoreboards:
+    scoreboard:
+      title: '%img_customtab%'
+      lines:
+      - ''
+      - '<#33FFFF>%player_name%</#33FFFF>'
+      - ' <#33FFFF>|</#33FFFF> &f%img_gold% ʙᴀʟᴀɴᴄᴇ: &a$%vault_eco_balance_formatted%'
+      - ' <#33FFFF>|</#33FFFF> &f%img_dsword% ᴋɪʟʟ: &c%statistic_PLAYER_KILLS%'
+      - ' <#33FFFF>|</#33FFFF> &f%img_totem% ᴅᴇᴀᴛʜ: &4%statistic_deaths%'
+      - ' <#33FFFF>|</#33FFFF> &f%img_grass% ᴡᴏʀʟᴅ: &e%player_world%'
+      - ''
+      - '<#33FFFF>ᴋʀᴀʏıʀ</#33FFFF>'
+      - ' <#33FFFF>|</#33FFFF> &f%img_alex% ᴏɴʟɪɴᴇ: &e%server_online%&7/&e%server_max_players%'
+      - ' <#33FFFF>|</#33FFFF> &f%img_steve% ᴏɴ ᴛʜɪs ᴡᴏʀʟᴅ: &e%worldonline%'
+      - ' '
+      - www.krayir5.xyz
+ping-spoof:
+  enabled: false
+  value: 0
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: true
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+primary-group-finding-list:
+- Admin
+- Dev
+- Default
+permission-refresh-interval: 1000
+debug: false
+use-online-uuid-in-tablist: true
+belowname-objective:
+  fancy-display-default: NPC
+  fancy-display-players: '&c%health%'
+  enabled: false
+mysql:
+  enabled: false
+assign-groups-by-permissions: false
+prevent-spectator-effect:
+  enabled: false
+per-world-playerlist:
+  enabled: false
+layout:
+  enabled: false
+global-playerlist:
+  enabled: false

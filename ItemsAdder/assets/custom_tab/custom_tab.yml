@@ -1,0 +1,57 @@
+info:
+  namespace: "custom_tab"
+font_images:
+  cols:
+    path: "customtab"
+    show_in_gui: false
+    suggest_in_command: false
+    scale_ratio: 28
+    y_position: 28
+  krayir5:
+    permission: "customtab.emote"
+    path: "krayir5"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
+  totem:
+    permission: "customtab.emote"
+    path: "totem"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
+  dsword:
+    permission: "customtab.emote"
+    path: "dsword"
+    scale_ratio: 12
+    y_position: 8
+    show_in_gui: true
+  gold:
+    permission: "customtab.emote"
+    path: "gold"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
+  alex:
+    permission: "customtab.emote"
+    path: "alex"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
+  steve:
+    permission: "customtab.emote"
+    path: "steve"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
+  grass:
+    permission: "customtab.emote"
+    path: "grass"
+    scale_ratio: 8
+    y_position: 8
+    show_in_gui: true
+  clock:
+    permission: "customtab.emote"
+    path: "clock.png"
+    scale_ratio: 10
+    y_position: 8
+    show_in_gui: true
